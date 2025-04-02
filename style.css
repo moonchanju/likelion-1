@@ -1,13 +1,34 @@
-div {
-    height :100px;
-    width: 100px;
-    border:1px solid black;
+.container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .container > div {
+    width: 200px;
+    height: 200px;
     background-color: lightgray;
-}
-
-#padding-box {
-    padding: 20px;
-}
-#margin-box {
-    margin:20px;
-}
+    border: 1px solid black;
+  }
+  
+  .box > div {
+    border: 1px solid black;
+  }
+  
+  #row-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  #column-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  #center-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
